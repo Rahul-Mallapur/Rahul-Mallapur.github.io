@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Projects Portfolio</title>
+  <meta name="description"
+    content="A collection of AI-powered tools and systems -- from ML infrastructure at a YC-backed startup to personal automation agents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AI Projects</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#contact">Get in touch</a>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#contact">Get in touch</a>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-intro">
+          Hi 👋 thanks for checking this out. I’m Rahul, a PM & a founder. Below is a quick walkthrough of AI projects
+          I've shipped from core ML systems in production to scrappy daily automations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+
+      <!-- 01: Blitzllama -->
+      <article class="project-block" id="project-1">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">01</span>
+            <span class="project-company">Blitzllama</span>
+          </div>
+          <h3 class="project-title">AI & ML Infra</h3>
+          <p class="project-description">
+            Built the full AI & ML stack powering Blitzllama, an AI user insights platform.
+          </p>
+        </div>
+
+        <div class="project-tabs">
+          <div class="tabs-list">
+            <button type="button" class="tab-btn active" data-tab="0">1. Topic Modeling</button>
+            <button type="button" class="tab-btn" data-tab="1">2. Trend &amp; Anomaly Detection</button>
+            <button type="button" class="tab-btn" data-tab="2">3. Pattern Detection</button>
+            <button type="button" class="tab-btn" data-tab="3">4. Reporting Engine</button>
+            <button type="button" class="tab-btn" data-tab="4">5. Interview Copilot</button>
+            <button type="button" class="tab-btn" data-tab="5">6. Search &amp; Chat</button>
+            <button type="button" class="tab-btn" data-tab="6">7. Semantic Chunking</button>
+          </div>
+          <div class="tabs-content">
+
+            <!-- Topic Modeling -->
+            <div class="tab-panel active" data-panel="0">
+              <div class="panel-image">
+                <img src="images/topic-modeling.png" alt="Topic modeling - Blitzllama Prioritise view"
+                  class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Topic Modeling</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-high">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">High Effort</span>
+                  </div>
+
+                </div>
+                <p>Built a context-aware clustering system that groups feedback into granular, actionable themes based
+                  on underlying intent, not just shared keywords. The model uses deep semantic embeddings plus survey
+                  and company context to distinguish similar language with different meanings, such as “notifications
+                  are too much” versus “notifications need rich media.” Each theme includes a clear topic label, intent
+                  classification, sentiment, and representative quotes so teams can act on it without extra analysis.
+                  The system runs unsupervised, works in cold-start settings, and keeps themes stable and interpretable
+                  as new feedback comes in.</p>
+              </div>
+            </div>
+
+            <!-- Trend & Anomaly Detection -->
+            <div class="tab-panel" data-panel="1">
+              <div class="panel-image">
+                <img src="images/trend-anomaly.png" alt="Trend and anomaly detection charts" class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Trend &amp; Anomaly Detection</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-high">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">High Effort</span>
+                  </div>
+
+                </div>
+                <p>Built a anomaly and trend detection system that continuously monitors feedback data to flag
+                  statistically significant shifts, both steady upward trends and sudden spikes. The model accounts for
+                  seasonality, baseline variance, and natural noise to reduce false alarms. It surfaces emerging issues
+                  early, such as a new onboarding bug driving a rise in “login failure” feedback, and highlights
+                  sustained increases that point to deeper product friction.</p>
+              </div>
+            </div>
+
+            <!-- Pattern Detection -->
+            <div class="tab-panel" data-panel="2">
+              <div class="panel-image">
+                <img src="images/pattern-detection.png" alt="Pattern detection key takeaways" class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Pattern Detection</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-high">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">High Effort</span>
+                  </div>
+
+                </div>
+                <p>Built an advanced analytics layer that surfaces hidden relationships across survey questions, user
+                  attributes, and feedback themes. Enabled cross-question analysis to reveal how responses interact -
+                  for example, users giving 5-star satisfaction ratings still flagging friction in specific areas.
+                  Implemented correlation analysis to uncover statistically meaningful links between segments (e.g.,
+                  location, behavior) and specific feedback patterns. Designed to automatically highlight emerging
+                  patterns with strong signal (using thresholds and lift metrics), helping teams identify root causes of
+                  satisfaction or dissatisfaction faster than manual analysis.</p>
+              </div>
+            </div>
+
+            <!-- Reporting Engine -->
+            <div class="tab-panel" data-panel="3">
+              <div class="panel-image">
+                <img src="images/reporting-engine.png" alt="Reporting engine - Blitzllama Reports dashboard"
+                  class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Reporting Engine</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-medium">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">Medium Effort</span>
+                  </div>
+
+                </div>
+                <p>Built an automated reporting system that acted as a virtual product analyst - summarizing feedback,
+                  surfacing top revenue opportunities, and highlighting recurring pain points without manual effort.
+                  Shipped 10 pre-built report templates covering daily, weekly, and monthly cadences, plus specialized
+                  templates like top revenue opportunities and high-LTV user pain points. Each report included
+                  drill-down capabilities with filters for date ranges, user cohorts, attributes, and channels. Added
+                  AI-driven recommendations that generated hypotheses to validate and suggested next steps. Reports
+                  delivered directly to email or Slack, with one-click actions to view related feedback or launch
+                  targeted follow-up surveys.</p>
+              </div>
+            </div>
+
+            <!-- Interview Copilot -->
+            <div class="tab-panel" data-panel="4">
+              <div class="panel-image">
+                <img src="images/user research interview.png"
+                  alt="Interview Copilot - Real-time transcription and suggestions" class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Interview Copilot</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-high">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">High Effort</span>
+                  </div>
+
+                </div>
+                <p>The AI copilot listens to interview audio from any tool, transcribes it in real time, and suggests
+                  strong follow-up questions based on what the participant just said. The goal is to help teams run
+                  better interviews, especially PMs and founders without formal research training. It reduces the gap
+                  between hearing something interesting and asking the right next question. Under the hood, I use
+                  speech-to-text with diarization and translation, then LLM workflows that generate targeted probes and
+                  clarifying questions on the fly. The result is more consistent interviews and better insights without
+                  a dedicated researcher on every call. Was in staging environment only.</p>
+              </div>
+            </div>
+
+            <!-- Search & Chat -->
+            <div class="tab-panel" data-panel="5">
+              <div class="panel-image">
+                <img src="images/search and chat.png" alt="Search and Chat - Semantic search interface"
+                  class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Search &amp; Chat</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-high">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">High Effort</span>
+                  </div>
+
+                </div>
+                <p>Built a semantic search and AI chat system that lets teams query user feedback in natural language
+                  (e.g., “What are enterprise customers frustrated about in onboarding?”) and get grounded,
+                  source-linked answers. Powered by embeddings and vector retrieval, the system surfaces the most
+                  relevant feedback snippets based on meaning—not just keyword matches. Designed with RAG architecture
+                  so responses are generated strictly from retrieved customer data, reducing hallucinations and
+                  improving trust. Optimized retrieval quality through semantic chunking, metadata filtering (cohort,
+                  date, channel), and prompt design for accurate, context-aware synthesis.</p>
+              </div>
+            </div>
+
+            <!-- Semantic Chunking -->
+            <div class="tab-panel" data-panel="6">
+              <div class="panel-image">
+                <div class="image-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <polyline points="21 15 16 10 5 21" />
+                  </svg>
+                  <span>Screenshot not available - data algorithm feature.</span>
+                </div>
+              </div>
+              <div class="panel-text">
+                <h4>Semantic Chunking</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-medium">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">Medium Effort</span>
+                  </div>
+
+                </div>
+                <p>Built a semantic chunking pipeline that segments long-form feedback and transcripts based on meaning
+                  rather than arbitrary character or sentence limits. Using embedding similarity, the system detects
+                  natural topic boundaries so each chunk contains a coherent unit of thought. This prevents fragmented
+                  context (e.g., splitting a complaint mid-explanation) and improves downstream clustering, search, and
+                  RAG retrieval quality.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- 02: Salient -->
+      <article class="project-block" id="project-2">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">02</span>
+            <span class="project-company">Salient</span>
+          </div>
+          <h3 class="project-title">Internal Tools &amp; Automation</h3>
+          <p class="project-description">
+            Built internal tools and automations at Salient, building AI agents for consumer lenders.
+          </p>
+        </div>
+
+        <div class="project-tabs">
+          <div class="tabs-list">
+            <button type="button" class="tab-btn active" data-tab="0">1. Customer Requests</button>
+            <button type="button" class="tab-btn" data-tab="1">2. Insurance Dashboard</button>
+          </div>
+          <div class="tabs-content">
+
+            <div class="tab-panel active" data-panel="0">
+              <div class="panel-image">
+                <img src="images/salient-customer-intelligence.png"
+                  alt="Customer intelligence and automation workspace view" class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>Customer Requests</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-medium">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">Medium Effort</span>
+                  </div>
+
+                </div>
+                <p>I built automations to sync all customer requests into Notion, with a separate workflow for each
+                  channel. For dashboard submissions, I set up a bidirectional Notion–database sync; for email, I built
+                  a Zapier-to-Notion workflow. To keep customers updated, I created a personalized weekly email for each
+                  account listing the features we shipped or are shipping for them.</p>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="1">
+              <div class="panel-image">
+                <div class="image-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <polyline points="21 15 16 10 5 21" />
+                  </svg>
+                  <span>Screenshot not available - internal feature.</span>
+                </div>
+              </div>
+              <div class="panel-text">
+                <h4>Insurance Dashboard</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-medium">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">Medium Effort</span>
+                  </div>
+
+                </div>
+                <p>I built a production analytics dashboard for Salient’s insurance agent to give customer teams
+                  visibility into claims status and pipeline health. I wrote the SQL behind the core views, including
+                  cohort-level claims closed, P90 time-in-stage breakdowns, and revenue curves, and added date range
+                  filters with data export options for deeper analysis. I shipped it end to end, from query design to
+                  production deployment</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- 03: Personal -->
+      <article class="project-block" id="project-3">
+        <div class="project-header">
+          <div class="project-meta">
+            <span class="project-number">03</span>
+            <span class="project-company">Personal</span>
+          </div>
+          <h3 class="project-title">Personal Projects</h3>
+          <p class="project-description">
+            Side projects built to solve personal workflows using AI.
+          </p>
+        </div>
+
+        <div class="project-tabs">
+          <div class="tabs-list">
+            <button type="button" class="tab-btn active" data-tab="0">1. AI Job Search Agent</button>
+          </div>
+          <div class="tabs-content">
+
+            <div class="tab-panel active" data-panel="0">
+              <div class="panel-image">
+                <img src="images/personal-job-search-agent.png" alt="AI Job Search Agent Screenshot"
+                  class="panel-screenshot">
+              </div>
+              <div class="panel-text">
+                <h4>AI Job Search Agent</h4>
+                <div class="panel-meta">
+                  <div class="effort-indicator effort-low">
+                    <div class="effort-bars"><span class="bar bar-1"></span><span class="bar bar-2"></span><span
+                        class="bar bar-3"></span></div>
+                    <span class="effort-label">Low Effort</span>
+                  </div>
+
+                </div>
+                <p>An autonomous agent that scrapes job openings across target companies and job boards, handling
+                  pagination, deduplication, and structured data extraction. Filters results by location, company type,
+                  and role criteria to only surface relevant matches. Uses LLMs to evaluate personal fit for each role
+                  based on skills, experience, and goals. Outputs a clean, structured Google Sheet with roles, titles,
+                  companies, and fit scores -- ready to act on.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <h2 class="section-title">About</h2>
+        <div class="about-inner">
+          <div class="about-text-col">
+            <p class="about-text">
+              Founder and PM with 10+ years building 0 to 1 products across SaaS, consumer, and enterprise.
+            </p>
+            <p class="about-text">
+              Most recently Product Lead at <strong>Salient</strong>, where I took an insurance AI agent from zero to
+              $XM ARR in five months, and was the forward deployed product manager working with six enterprise lenders.
+            </p>
+            <p class="about-text">
+              Before that, co-founded <strong>Blitzllama</strong> (backed by Y Combinator, acquired by VWO), an AI user
+              research platform, scaled to 150 customers. Owned product, data science, and closed 80% of revenue.
+              Previously was a PM at Zynga, and founding PM at two startups.
+            </p>
+          </div>
+          <img src="images/rahul.jpeg" alt="Rahul Mallapur" class="about-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="contact-content">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-text">Interested in working together? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:rahul.mallapur@gmail.com" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/rahul-mallapur/" target="_blank" rel="noopener" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
