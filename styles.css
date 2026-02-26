@@ -182,6 +182,15 @@ strong {
   max-width: 620px;
 }
 
+.hero-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
 .hero-intro {
   font-size: 22px;
   line-height: 1.55;
